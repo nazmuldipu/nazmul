@@ -1,0 +1,23 @@
+.base {
+  background-color: #8c43ff;
+  color: #fff;
+  word-break: break-word;
+  font-family: 'eurostile', sans-serif;
+  text-align: center;
+  padding-bottom: 220px;
+  &-head {
+    padding-top: 120px;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    line-height: 1.125;
+    font-size: 2rem !important;
+  }
+  &-text {
+    font-family: 'europa', sans-serif;
+    font-weight: 200;
+    line-height: 1.5;
+    font-size: 1.25rem !important;
+    padding: 0 30px 50px;
+    text-align: justify;
+  }
+}

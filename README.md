@@ -1,27 +1,23 @@
-# Nazmul
+# Libraries
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
+## angular-cli-ghpages
 
-## Development server
+    url: https://www.npmjs.com/package/angular-cli-ghpages
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Commands
 
-## Code scaffolding
+To install
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    npm i angular-cli-ghpages --save-dev
 
-## Build
+To build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+    ng build --prod --base-href "/"
 
-## Running unit tests
+To publish
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    npx ngh
 
-## Running end-to-end tests
+or
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+    ngh --dir dist/nazmul --no-silent --repo=git@github.com:nazmuldipu/nazmul.git

@@ -1,0 +1,25 @@
+.intro {
+  text-align: center;
+  color: #293347;
+  word-break: break-word;
+  &-head {
+    font-family: 'eurostile', sans-serif;
+    font-weight: 800;
+    line-height: 1.125;
+    font-size: 3rem !important;
+  }
+  &-dialog {
+    font-family: 'europa', sans-serif;
+    font-size: 1.5rem !important;
+    font-weight: 200;
+    line-height: 1.5;
+    padding: 20px 0;
+  }
+  &-avatar-icon {
+    width: 200px;
+    padding: 30px;
+  }
+  &-image-img {
+    width: 860px;
+  }
+}

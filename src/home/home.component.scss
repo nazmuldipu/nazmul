@@ -1,0 +1,17 @@
+.menu-side {
+  width: 260px;
+}
+.menu-open .menu-side {
+  top: 15px;
+  left: 0;
+}
+.contents {
+  margin-left: 260px;
+  margin-top: 70px;
+}
+@media (max-width: 767px) {
+  .contents {
+    margin-top: 0;
+    margin-left: 0;
+  }
+}
