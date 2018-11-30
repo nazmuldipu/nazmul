@@ -1,0 +1,45 @@
+.footer {
+  margin-top: -16rem;
+  margin-bottom: 5rem;
+  border-radius: 12px;
+  padding: 3.5rem 1.25rem;
+  background-color: #293347;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px #293347;
+  &-left {
+    color: #fff;
+    margin-bottom: 0;
+    font-weight: 800;
+    font-size: 2rem;
+    line-height: 1.125;
+    font-family: 'eurostile', sans-serif;
+  }
+  &-center {
+    font-size: 18px;
+    color: #fff;
+    font-weight: 200;
+  }
+  &-right {
+    & button {
+      color: white;
+      font-size: 20px;
+    }
+  }
+}
+.footer2 {
+  background-color: #8c43ff;
+  color: #fff;
+  min-height: 180px;
+}
+
+.footer3 {
+  background-color: #8c43ff;
+  color: #fff;
+  min-height: 180px;
+  &-texts {
+    font-weight: 300;
+    font-size: 1.6rem;
+    margin: 2rem auto;
+    line-height: 1.125;
+    font-family: 'eurostile', sans-serif;
+  }
+}
