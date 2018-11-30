@@ -1,0 +1,168 @@
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000px;
+  // border: 1px solid gray;
+}
+/* flip the pane when hovered */
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+  width: 100%;
+  height: 280px;
+}
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+
+  position: relative;
+}
+
+/* hide back of pane during swap */
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+}
+.recent {
+  color: #111;
+  word-break: break-word;
+  font-family: 'eurostile', sans-serif;
+  text-align: center;
+  &-head {
+    padding-top: 120px;
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+    line-height: 1.125;
+    font-size: 2.5rem !important;
+  }
+  &-dialog {
+    font-family: 'europa', sans-serif;
+    font-weight: 200;
+    line-height: 1.5;
+    font-size: 1.25rem !important;
+    padding: 0 30px 50px;
+  }
+  &-card {
+    &-front {
+      border-radius: 12px;
+      padding-top: 80px;
+      &-image {
+        max-width: 90px;
+        max-height: 90px;
+        padding-right: 2px;
+      }
+      &-name {
+        height: 90px;
+        font-size: 50px;
+      }
+    }
+    &-back {
+      border-radius: 12px;
+      padding-top: 20px;
+      font-size: 24px;
+      color: white;
+      &-text {
+        padding: 15px;
+        height: 190px;
+        overflow: hidden;
+      }
+      &-link {
+        & a {
+          color: white;
+          font-size: 24px;
+        }
+      }
+    }
+  }
+}
+
+// .recent {
+//   color: #111;
+//   word-break: break-word;
+//   font-family: 'eurostile', sans-serif;
+//   text-align: center;
+//   padding-bottom: 220px;
+//   &-head {
+//     padding-top: 120px;
+//     margin-bottom: 1.5rem;
+//     font-weight: 800;
+//     line-height: 1.125;
+//     font-size: 2rem !important;
+//   }
+//   &-text {
+//     font-family: 'europa', sans-serif;
+//     font-weight: 200;
+//     line-height: 1.5;
+//     font-size: 1.25rem !important;
+//     padding: 0 30px 50px;
+//   }
+
+//   &-card {
+//     height: 320px;
+//     min-width: 200px;
+//     width: 100%;
+//     border-radius: 10px;
+//     -webkit-box-shadow: 0 1px 3px 0 rgba(38, 41, 58, 0.3);
+//     box-shadow: 0 1px 3px 0 rgba(38, 41, 58, 0.3);
+//     -webkit-transition: all 0.2s ease-in-out;
+//     -moz-transition: all 0.2s ease-in-out;
+//     transition: all 0.2s ease-in-out;
+//     padding: 20px;
+//     font-size: 2em;
+//     &-image {
+//       max-width: 100%;
+//       max-height: 100px;
+//       padding-bottom: 20px;
+//     }
+//     &-button {
+//       display: block;
+//       padding-top: 15px;
+//       text-decoration: none;
+//       color: #14a0f8;
+//       border: 1px solid #14a0f8;
+//       padding: 12px;
+//       border-radius: 10px;
+//       font-size: 20px;
+//     }
+//   }
+//   &-card:hover {
+//     transform: scale(1.1);
+//     &-image {
+//       display: none;
+//     }
+//   }
+// }
+// .recent-card-button:hover {
+//   color: #fff;
+//   background-color: #14a0f8;
+// }
+
+// .bg-blue {
+//   background-color: #14a0f8;
+// }
+
+// .bg-linkdin {
+//   background-color: #f5f5f5;
+// }
+// #293347
