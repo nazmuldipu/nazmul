@@ -11,6 +11,7 @@ import { BaseInfoComponent } from './components/base-info/base-info.component';
 import { FeaturesComponent } from './components/features/features.component';
 import { RecentsComponent } from './components/recents/recents.component';
 import { StartupsComponent } from './components/startups/startups.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 export const ROUTES: Routes = [
   {
@@ -37,7 +38,8 @@ export const ROUTES: Routes = [
     BaseInfoComponent,
     FeaturesComponent,
     RecentsComponent,
-    StartupsComponent
+    StartupsComponent,
+    FooterComponent
   ]
 })
 export class HomeModule {}
