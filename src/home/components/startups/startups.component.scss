@@ -68,6 +68,12 @@
   }
 }
 
+@media only screen and (max-width: 767px) {
+  .projects-card {
+    margin-top: 10px;
+  }
+}
+
 .investment {
   padding: 100px 0;
   &-head {

@@ -31,6 +31,16 @@
   min-height: 180px;
 }
 
+@media only screen and (max-width: 767px) {
+  .footer2 {
+    min-height: 250px;
+  }
+  .footer {
+    margin-top: -20rem;
+    margin-bottom: 2rem;
+  }
+}
+
 .footer3 {
   background-color: #8c43ff;
   color: #fff;

@@ -21,3 +21,5 @@ To publish
 or
 
     ngh --dir dist/nazmul --no-silent --repo=git@github.com:nazmuldipu/nazmul.git
+
+ng build --prod --base-href "/" && ngh --dir dist/nazmul --no-silent --repo=git@github.com:nazmuldipu/nazmul.git
