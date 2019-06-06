@@ -12,6 +12,7 @@ import { FeaturesComponent } from './components/features/features.component';
 import { RecentsComponent } from './components/recents/recents.component';
 import { StartupsComponent } from './components/startups/startups.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 export const ROUTES: Routes = [
   {
@@ -28,7 +29,7 @@ export const ROUTES: Routes = [
 ];
 
 @NgModule({
-  imports: [CommonModule, RouterModule.forChild(ROUTES)],
+  imports: [CommonModule, InfiniteScrollModule, RouterModule.forChild(ROUTES)],
   declarations: [
     HomeComponent,
     IndexComponent,

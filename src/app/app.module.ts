@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent } from './app.component';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 // routes
 export const ROUTES: Routes = [
