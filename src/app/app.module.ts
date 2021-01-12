@@ -9,7 +9,7 @@ import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 export const ROUTES: Routes = [
   {
     path: '',
-    loadChildren: '../home/home.module#HomeModule'
+    loadChildren: () => import('../home/home.module').then(m => m.HomeModule)
   },
   { path: '**', redirectTo: '/' }
 ];

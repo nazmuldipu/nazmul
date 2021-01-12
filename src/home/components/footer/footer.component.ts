@@ -32,8 +32,8 @@ export class FooterComponent {
     this.addItems(startIndex, endIndex, 'unshift');
   }
 
-  onScrollDown(ev) {
-    console.log('scrolled down!!', ev);
+  onScrollDown() {
+    console.log('scrolled down!!');
 
     // add another 20 items
     const start = this.sum;
@@ -43,8 +43,8 @@ export class FooterComponent {
     this.direction = 'down';
   }
 
-  onUp(ev) {
-    console.log('scrolled up!', ev);
+  onUp() {
+    console.log('scrolled up!');
     const start = this.sum;
     this.sum += 20;
     this.prependItems(start, this.sum);
